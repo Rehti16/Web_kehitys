@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+  h2 { color: rgb(128, 0, 0); }
+
+  p {
+    color: blue;
+  }
+
+  body {
+    background-color: rgb(196, 196, 196);
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  .content-box {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #d3d3d3;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lightgray;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+}
+</style>
+ <blockquote class="quote">
+    Be The Penguin.
+</blockquote>   
+</head>
+<body>
+    <h1 style="color: rgb(197, 0, 0);">Roni Siitari</h1>
+        <p>20 Vuotias tyyppi joka pelaa liikaa videopelejä</p>
+        <img src="Minä.jpg" alt="Kuva ittestäni itäväylässä" class="filter-image">
+    <div class="content-box">
+  <h2>Harrastukset</h2>
+  <ol>
+    <li>E-Sports</li>
+    <li>Jääkiekko</li>
+    <li>Sulkapallo</li>
+  </ol>
+</div>
+    <div class="content-box">
+  <h2>Asioita joita tykkään tehdä jotka ei ole harrastuksia</h2>
+  <ul>
+    <li>Lukeminen</li>
+    <li>Luonnossa kävely</li>
+    <li>Anime</li>
+  </ul>
+</div>
+    <a href="https://x.com/Eestuuu/status/1724895573969711482">Clik here for the best chicken pasta by Eestu</a>
+    <table>
+    <tr>
+        <th>Opinto</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Websivuston kehittäminen</td>
+        <td>Käynnissä</td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>Käynnissä</td>
+    </tr>
+    </table>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    <button class="transition-button">Hover me</button>
+    <div class="animation-box"></div>
+    </form>
+    <ul class="pseudo-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+    </body>
+    </html>

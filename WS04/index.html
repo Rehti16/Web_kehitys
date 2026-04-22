@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 4</title>
+<style>
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 15px;
+    margin: 20px 0;
+  }
+
+  .grid-item {
+    background-color: #f30914;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+    .flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: rgb(235, 3, 3);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 100px;
+}
+
+.responsive-box {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: rgb(171, 0, 251);
+    }
+}
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Myself Explained</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is the story of Roni</p>
+    </section>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    </div>
+    <div class="responsive-box">Resize the window to see the effect</div>
+
+</main>
+
+<footer>
+    <p>Copyright 2026</p>
+</footer>
+</body>
+</html>

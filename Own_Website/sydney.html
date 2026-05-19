@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Sydney</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Sydney, Australia</h1>
+
+      <div class="image-gallery">
+        <img src="Sydney2.jpg" class="gallery-img" alt="Sydney City">
+        <img src="Sydney3.jpg" class="gallery-img" alt="Sydney New Years">
+        <img src="Sydney4.jpg" class="gallery-img" alt="Sydney National Park">
+      </div>
+
+      <article>
+        <h2>Sydney Travel Notes</h2>
+        <p>
+          I myself went to Sydney to get my first experience of a very big city
+          and to see the highly talked Sydney new years fireworks. And Sydney
+          did not disappoint. The city is so vibrant and full of life and there
+          is always something to do. I loved the mix of nature and city life in
+          Sydney. You can go to the beach and then go to a bar in the city in
+          the same day. And the views from the city are just breathtaking.
+          Fireworks also were amazing and I would recommend anyone to go to
+          Sydney for new years if they want to experience Close second to the
+          best new years celebrations behind Japan.
+        </p>
+        <p>
+          Would you go spend your new years in sydney to witness the amazing
+          fireworks?
+        </p>
+      </article>
+
+      <div class="comment-section">
+        <h3>Leave a Comment</h3>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

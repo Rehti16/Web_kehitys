@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Kyoto</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Kyoto, Japan</h1>
+
+      <div class="image-gallery">
+        <img
+          src="kyoto2.jpg"
+          class="gallery-img"
+          alt="Kyoto's main Temple Tower"
+        >
+        <img
+          src="kyoto3.jpg"
+          class="gallery-img"
+          alt="Snow covered bamboo grove"
+        >
+        <img
+          src="kyoto4.jpg"
+          class="gallery-img"
+          alt="Railway tracks running through a tunnel of pink cherry blossom trees"
+        >
+      </div>
+
+      <article>
+        <h2>Kyoto Travel Notes</h2>
+        <p>
+          Where do i even start with Kyoto, one of the most beautiful cities in
+          the world. I've been to many places in the world and seen many
+          beautiful cities but Kyoto is on a whole different level. The culture,
+          the food, the people, the temples, the shrines, the gardens, the
+          bamboo forest, the mountains, the river, the city itself, everything
+          is just so beautiful. The best part is that it's not just Kyoto itself
+          but the whole country of Japan is just so beautiful and Kyoto is the
+          perfect place to experience it all. And from Kyoto you can easily take
+          day trips to other beautiful places in Japan like Nara, Osaka,
+          Hiroshima, Tokyo, Himeji and many more. I would recommend everyone to
+          take that Japan trip out of the group chat and make it a reality, best
+          trip of my entire life.
+        </p>
+        <p>
+          Do you and your friends have that one Japan trip in a group chat
+          sitting aswell?
+        </p>
+      </article>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

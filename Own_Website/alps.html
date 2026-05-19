@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | The Alps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>The Alps, Austria</h1>
+
+      <div class="image-gallery">
+        <img src="alps2.png" class="gallery-img" alt="Alps Winter">
+        <img src="alps3.jpg" class="gallery-img" alt="Alps lake">
+        <img src="alps4.jpg" class="gallery-img" alt="Alps peaks">
+      </div>
+
+      <article>
+        <h2>Trip Reflection</h2>
+        <p>
+          I've always loved nature and especially mountains so of course I had
+          to get to the Alps. But even though I love mountains and nature, I
+          still have a very bad fear of heights so getting up there needed a lot
+          of courage gathering. I'm so glad that I ended up facing my fears and
+          going anyway because the clarity of the air and the sheer magnitude of
+          the landscape completely changed my perspective on natures beauty.
+        </p>
+        <p>
+          Would you be interested to head to the mountains and experience this
+          breathtaking view?
+        </p>
+      </article>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

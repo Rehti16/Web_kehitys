@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Lapland</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Lapland, Finland</h1>
+
+      <div class="image-gallery">
+        <img src="lapland2.jpg" class="gallery-img" alt="Lapland landscape">
+        <img src="Lapland3.jpg" class="gallery-img" alt="Lapland christmas">
+        <img src="Lapland4.jpg" class="gallery-img" alt="Lapland peaks">
+      </div>
+
+      <article>
+        <h2>Lapland Travel Notes</h2>
+        <p>
+          Okay I know I mentioned I live in Finland but I just had to include
+          Lapland in this list because it is such a unique and beautiful place.
+          I have been to Lapland many times and every time I go there I am
+          amazed by the beauty of the nature and the peacefulness of the place.
+          If you want to experience a magical winter wonderland and see the
+          northern lights, Lapland is the place to go. I would recommend this
+          place to anyone who loves nature and wants to experience something
+          truly unique.
+        </p>
+        <p>
+          Would you go to lapland to witness the northern lights?
+        </p>
+      </article>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

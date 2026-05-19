@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Geirangerfjord</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Geirangerfjord, Norway</h1>
+
+      <div class="image-gallery">
+        <img
+          src="Geirangerfjord2.png"
+          class="gallery-img"
+          alt="Geirangerfjord River"
+        >
+        <img
+          src="Geirangerfjord3.jpg"
+          class="gallery-img"
+          alt="Geirangerfjord landscape"
+        >
+        <img
+          src="Geirangerfjord4.jpg"
+          class="gallery-img"
+          alt="Geirangerfjord Winter"
+        >
+      </div>
+
+      <article>
+        <header>
+          <h2>About Geirangerfjord</h2>
+        </header>
+        <p>
+          Me and my family were desperately searching for a place with mountains
+          and water and we found this place and decided to drive there for
+          summers holidays. And it was such a breathtaking view and the
+          combination of the mountains and the water was just amazing. there was
+          also a lot of waterfalls and the nature was just so beautiful. I would
+          recommend this place to anyone who loves nature and wants to
+          experience one of the most beautiful underrated locations in the
+          world.
+        </p>
+        <p>Would you take your changes and visit this underrated location?</p>
+      </article>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

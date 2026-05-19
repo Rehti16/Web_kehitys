@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Travel Forum</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="forum.html" class="active">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Community Travel Forum</h1>
+      <p>
+        Tell others about your travel experiences, share tips, and connect with
+        fellow adventurers!
+      </p>
+
+      <div class="comment-section" style="border-top: none; margin-top: 20px">
+        <h2>Share your journey</h2>
+        <form id="forum-form">
+          <input
+            type="text"
+            id="forum-title"
+            placeholder="Topic / Destination Title (e.g., Hidden cafe in Tokyo!)"
+            required
+          >
+          <input
+            type="text"
+            id="forum-author"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="forum-content"
+            placeholder="Share your journey stories or suggestions..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Post to Forum
+          </button>
+        </form>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #ccc; margin: 40px 0">
+
+      <h2>Active Discussions</h2>
+      <div id="forum-threads-container"></div>
+    </main>
+
+    <footer>
+      <p>&copy; All rights reserved to REHTI.</p>
+    </footer>
+
+    <script src="forum.js"></script>
+  </body>
+</html>

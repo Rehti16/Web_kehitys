@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHTI | Dubrovnik</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">REHTI</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Dubrovnik, Croatia</h1>
+
+      <div class="image-gallery">
+        <img src="Dubrovnik2.jpg" class="gallery-img" alt="Dubrovnik coast">
+        <img src="Dubrovnik3.jpg" class="gallery-img" alt="Waterfalls">
+        <img src="Dubrovnik4.jpg" class="gallery-img" alt="Croatia sea">
+      </div>
+
+      <article>
+        <h2>About Dubrovnik</h2>
+        <p>
+          Not gonna lie this was not my favourite trip since I'm not the beach
+          type, My father took me here for my 18th birthday so it matched well
+          since like I mentioned it is a party place there is alot of day trips
+          you can take to other cool places like the waterfalls pictured above.
+          Also as a warning if you don't like the heat don't go place is very
+          hot like talking 35-40 degrees a day, air is very humid aswell if your
+          not walking by the ocean. So make sure to pack alot of sunscreen.
+        </p>
+        <p>
+          Are you a beach type of person or are you like me who likes more
+          nature and adventure?
+        </p>
+      </article>
+
+      <div class="comment-section">
+        <h2>Leave a Comment</h2>
+        <form id="comment-form">
+          <input
+            type="text"
+            id="comment-name"
+            placeholder="Your Name"
+            required
+          >
+          <textarea
+            id="comment-text"
+            placeholder="Write your thoughts..."
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="back-btn"
+            style="margin-top: 10px; cursor: pointer"
+          >
+            Submit Comment
+          </button>
+        </form>
+
+        <div id="comments-container"></div>
+      </div>
+      <a href="destinations.html" class="back-btn"
+        >&larr; Back to Destinations</a
+      >
+    </main>
+
+    <footer>
+      <p>&copy;All rights reserved to REHTI.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
